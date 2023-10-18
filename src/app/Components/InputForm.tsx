@@ -104,6 +104,13 @@ export default function InputForm() {
             className='shadow appearance-none border rounded bg-green-300 w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline'
           />
         </div>
+        <button
+          type='submit'
+          disabled
+          className='mt-4  bg-purple-500 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline'
+        >
+          Calculate
+        </button>
       </form>
     </div>
   );
