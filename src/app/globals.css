@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+td {
+  @apply px-6 py-4;
+}
+tbody > tr {
+  @apply bg-white border-b;
+}
+tbody > th {
+  @apply px-6 py-4 font-medium text-gray-900 whitespace-nowrap;
+}
+th {
+  @apply px-6 py-3 border-b-2;
+}
+table {
+  @apply w-full text-sm text-left text-gray-500;
+}
+thead {
+  @apply text-xs text-gray-700 uppercase text-center bg-gray-200;
+}
